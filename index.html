@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | BookStore</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body class="auth-page" data-page="login">
+  <main class="auth-card">
+    <a class="brand auth-brand" href="index.html"><span class="brand-mark">B</span><span>book<span class="brand-accent">store.</span></span></a>
+    <p class="eyebrow">ONLINE BOOK SHOP</p>
+    <h1>Selamat datang kembali!</h1>
+    <p class="muted">Masuk untuk melanjutkan pengalaman belanja buku Anda.</p>
+    <form id="loginForm" class="form-stack">
+      <label for="loginEmail">Email</label>
+      <input id="loginEmail" type="email" placeholder="nama@email.com" required>
+      <label for="loginPassword">Password</label>
+      <input id="loginPassword" type="password" placeholder="Masukkan password" required>
+      <button class="btn btn-primary btn-full" type="submit">Login <span>→</span></button>
+    </form>
+    <div class="auth-links"><button class="text-button" data-modal="forgotModal">Lupa Password?</button><span>Belum punya akun? <button class="text-button" data-modal="registerModal">Daftar</button></span></div>
+    <div class="demo-note"><strong>Akun demo untuk pengujian</strong><br>Email: admin@bookstore.com<br>Password: 123456</div>
+  </main>
+
+  <div class="modal" id="forgotModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" data-close>&times;</button><h2>Lupa Password</h2><p class="muted">Masukkan email akun Anda. Simulasi ini akan menampilkan notifikasi.</p><form id="forgotForm" class="form-stack"><label for="forgotEmail">Email</label><input id="forgotEmail" type="email" required placeholder="nama@email.com"><button class="btn btn-primary" type="submit">Kirim Instruksi</button></form></div></div>
+  <div class="modal" id="registerModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" data-close>&times;</button><h2>Buat Akun Baru</h2><p class="muted">Form pendaftaran simulasi BookStore.</p><form id="registerForm" class="form-stack"><label for="registerName">Nama lengkap</label><input id="registerName" required placeholder="Nama Anda"><label for="registerEmail">Email</label><input id="registerEmail" type="email" required placeholder="nama@email.com"><label for="registerPassword">Password</label><input id="registerPassword" type="password" minlength="6" required placeholder="Minimal 6 karakter"><button class="btn btn-primary" type="submit">Daftar Sekarang</button></form></div></div>
+</body>
+</html>

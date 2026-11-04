@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Tracking | BookStore</title><link rel="stylesheet" href="css/style.css"><script src="js/data.js" defer></script><script src="js/script.js" defer></script></head>
+<body data-page="tracking"><div class="app-shell">
+<aside class="sidebar"><a class="brand" href="dashboard.html"><span class="brand-mark">B</span><span>book<span class="brand-accent">store.</span></span></a><p class="side-label">MENU UTAMA</p><nav class="side-nav"><a href="dashboard.html">▦ <span>Dashboard</span></a><a href="stok.html">▤ <span>Katalog Buku</span></a><a href="checkout.html">＋ <span>Pemesanan</span></a><a class="active" href="tracking.html">⌁ <span>Tracking</span></a></nav><div class="sidebar-bottom"><div class="profile-mini"><div class="avatar">A</div><div><strong>Admin BookStore</strong><small>Administrator</small></div></div><button class="side-logout" data-logout>↪ Keluar</button></div></aside>
+<main class="main-content"><header class="topbar"><div><span class="eyebrow">DELIVERY MANAGEMENT</span><h2>Tracking Pengiriman</h2></div><div class="top-user"><span class="avatar">A</span><span>Admin</span></div></header>
+<section class="tracking-hero"><span class="tracking-emoji">📦</span><h1>Lacak Pesanan Anda</h1><p>Masukkan nomor Delivery Order untuk melihat status pengiriman buku.</p><form id="trackingForm" class="tracking-search"><input id="trackingNumber" required placeholder="Contoh: DO-20261104-1234"><button class="btn btn-primary" type="submit">Cari Pesanan</button></form><small class="muted">Nomor DO tersedia setelah pesanan berhasil dibuat.</small></section>
+<section id="trackingResult" class="panel tracking-result hidden"></section>
+</main></div></body></html>
